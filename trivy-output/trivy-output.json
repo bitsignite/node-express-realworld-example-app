@@ -1,0 +1,3182 @@
+[
+  {
+    "Target": "yarn.lock",
+    "Type": "yarn",
+    "Vulnerabilities": [
+      {
+        "VulnerabilityID": "GHSA-7fhm-mqm4-2wp7",
+        "PkgName": "acorn",
+        "InstalledVersion": "4.0.13",
+        "FixedVersion": "7.1.1, 6.4.1, 5.7.4",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7",
+        "Title": "Withdrawn: ESLint dependencies are vulnerable (ReDoS and Prototype Pollution)",
+        "Description": "**Withdrawn**\nGitHub has withdrawn this advisory in place of GHSA-vh95-rmgr-6w4m and GHSA-6chw-6frg-f759.\nThe reason for withdrawing is that some mistakes were made during the ingestion of CVE-2020-7598\nwhich caused this advisory to be published with incorrect information.\n\nIn order to provide accurate advisory information, new advisories were created:\n\n- minimist: https://github.com/advisories/GHSA-vh95-rmgr-6w4m\n- acorn: https://github.com/advisories/GHSA-6chw-6frg-f759",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-6chw-6frg-f759",
+          "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3745",
+        "PkgName": "atob",
+        "InstalledVersion": "2.0.3",
+        "FixedVersion": "2.1.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3745",
+        "Title": "Out-of-bounds Read",
+        "Description": "atob 2.0.3 and earlier allocates uninitialized Buffers when number is passed in input on Node.js 4.x and below.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+            "V2Score": 6.4,
+            "V3Score": 9.1
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-8w4h-3cm3-2pm2",
+          "https://hackerone.com/reports/321686",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3745"
+        ],
+        "PublishedDate": "2018-05-29T20:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:40:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-j4mr-9xw3-c9jx",
+        "PkgName": "base64-url",
+        "InstalledVersion": "1.2.1",
+        "FixedVersion": "2.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-j4mr-9xw3-c9jx",
+        "Title": "Out-of-bounds Read in base64-url",
+        "Description": "Versions of `base64-url` before 2.0.0 are vulnerable to out-of-bounds read as it allocates uninitialized Buffers when number is passed in input.\n\n\n## Recommendation\n\nUpdate to version 2.0.0 or later.",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/advisories/GHSA-j4mr-9xw3-c9jx",
+          "https://hackerone.com/reports/321692"
+        ]
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-434",
+        "PkgName": "base64-url",
+        "InstalledVersion": "1.2.1",
+        "FixedVersion": "\u003e=2.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/321692",
+        "Title": "Out-of-bounds Read",
+        "Description": "`base64-url` below 2.0 allocates uninitialized Buffers when number is passed in input",
+        "Severity": "HIGH",
+        "References": [
+          "https://hackerone.com/reports/321692"
+        ]
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-428",
+        "PkgName": "base64url",
+        "InstalledVersion": "2.0.0",
+        "FixedVersion": "\u003e=3.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/321687",
+        "Title": "Out-of-bounds Read",
+        "Description": "`base64url` allocates uninitialized Buffers when number is passed in input on Node.js 4.x and below",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/brianloveswords/base64url/pull/25",
+          "https://hackerone.com/reports/321687"
+        ]
+      },
+      {
+        "VulnerabilityID": "GHSA-rvg8-pwq2-xj7q",
+        "PkgName": "base64url",
+        "InstalledVersion": "2.0.0",
+        "FixedVersion": "3.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-rvg8-pwq2-xj7q",
+        "Title": "Out-of-bounds Read in base64url",
+        "Description": "Versions of `base64url` before 3.0.0 are vulnerable to to out-of-bounds reads as it allocates uninitialized Buffers when number is passed in input on Node.js 4.x and below.\n\n\n## Recommendation\n\nUpdate to version 3.0.0 or later.",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-rvg8-pwq2-xj7q",
+          "https://github.com/brianloveswords/base64url/pull/25"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2020-8244",
+        "PkgName": "bl",
+        "InstalledVersion": "1.0.3",
+        "FixedVersion": "2.2.1, 1.2.3, 4.0.3, 3.0.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8244",
+        "Title": "nodejs-bl: buffer over-read vulnerability leads to corrupted BufferList which can result in uninitialized memory being leaked",
+        "Description": "A buffer over-read vulnerability exists in bl \u003c4.0.3, \u003c3.0.1, \u003c2.2.1, and \u003c1.2.3 which could allow an attacker to supply user input (even typed) that if it ends up in consume() argument and can become negative, the BufferList state can be corrupted, tricking it into exposing uninitialized memory via regular .slice() calls.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+            "V2Score": 6.4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8244",
+          "https://github.com/advisories/GHSA-pp7h-53gx-mx7r",
+          "https://hackerone.com/reports/966347",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-8244"
+        ],
+        "PublishedDate": "2020-08-30T15:15:00Z",
+        "LastModifiedDate": "2021-04-21T17:44:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-g95f-p29q-9xw4",
+        "PkgName": "braces",
+        "InstalledVersion": "1.8.5",
+        "FixedVersion": "2.3.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-g95f-p29q-9xw4",
+        "Title": "Regular Expression Denial of Service in braces",
+        "Description": "Versions of `braces` prior to 2.3.1 are vulnerable to Regular Expression Denial of Service (ReDoS). Untrusted input may cause catastrophic backtracking while matching regular expressions. This can cause the application to be unresponsive leading to Denial of Service.\n\n\n## Recommendation\n\nUpgrade to version 2.3.1 or higher.",
+        "Severity": "LOW",
+        "References": [
+          "https://github.com/advisories/GHSA-g95f-p29q-9xw4",
+          "https://github.com/micromatch/braces/commit/abdafb0cae1e0c00f184abbadc692f4eaa98f451"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2020-7610",
+        "PkgName": "bson",
+        "InstalledVersion": "0.4.21",
+        "FixedVersion": "1.1.4",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7610",
+        "Title": "bson:  Deserialization of Untrusted Data could result in Code injection or Excessive CPU load",
+        "Description": "All versions of bson before 1.1.4 are vulnerable to Deserialization of Untrusted Data. The package will ignore an unknown value for an object's _bsotype, leading to cases where an object is serialized as a document rather than the intended BSON type.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-502"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7610",
+          "https://github.com/advisories/GHSA-v8w9-2789-6hhr",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-7610",
+          "https://snyk.io/vuln/SNYK-JS-BSON-561052"
+        ],
+        "PublishedDate": "2020-03-30T19:15:00Z",
+        "LastModifiedDate": "2020-04-01T19:47:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-16472",
+        "PkgName": "cached-path-relative",
+        "InstalledVersion": "1.0.1",
+        "FixedVersion": "1.0.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16472",
+        "Title": "nodejs-cached-path-relative: prototype pollution due to injected properties on Object.prototype",
+        "Description": "A prototype pollution attack in cached-path-relative versions \u003c=1.0.1 allows an attacker to inject properties on Object.prototype which are then inherited by all the JS objects through the prototype chain causing a DoS attack.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16472",
+          "https://github.com/advisories/GHSA-hc9w-4p87-j549",
+          "https://github.com/ashaffer/cached-path-relative/issues/3",
+          "https://hackerone.com/reports/390847",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-16472"
+        ],
+        "PublishedDate": "2018-11-06T19:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:36:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-1000620",
+        "PkgName": "cryptiles",
+        "InstalledVersion": "2.0.5",
+        "FixedVersion": "4.1.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1000620",
+        "Title": "nodejs-cryptiles: Insecure randomness causes the randomDigits() function returns a pseudo-random data string biased to certain digits",
+        "Description": "Eran Hammer cryptiles version 4.1.1 earlier contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method that can result in An attacker is more likely to be able to brute force something that was supposed to be random.. This attack appear to be exploitable via Depends upon the calling application.. This vulnerability appears to have been fixed in 4.1.2.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-331"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "V3Score": 3.7
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-rq8g-5pc5-wrhr",
+          "https://github.com/hapijs/cryptiles/issues/34",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-1000620"
+        ],
+        "PublishedDate": "2018-07-09T20:29:00Z",
+        "LastModifiedDate": "2018-09-10T16:07:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-1000620",
+        "PkgName": "cryptiles",
+        "InstalledVersion": "3.1.2",
+        "FixedVersion": "4.1.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-1000620",
+        "Title": "nodejs-cryptiles: Insecure randomness causes the randomDigits() function returns a pseudo-random data string biased to certain digits",
+        "Description": "Eran Hammer cryptiles version 4.1.1 earlier contains a CWE-331: Insufficient Entropy vulnerability in randomDigits() method that can result in An attacker is more likely to be able to brute force something that was supposed to be random.. This attack appear to be exploitable via Depends upon the calling application.. This vulnerability appears to have been fixed in 4.1.2.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-331"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "V3Score": 3.7
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-rq8g-5pc5-wrhr",
+          "https://github.com/hapijs/cryptiles/issues/34",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-1000620"
+        ],
+        "PublishedDate": "2018-07-09T20:29:00Z",
+        "LastModifiedDate": "2018-09-10T16:07:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-17592",
+        "PkgName": "csv-parse",
+        "InstalledVersion": "1.2.2",
+        "FixedVersion": "4.4.6",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17592",
+        "Title": "nodejs: regular expression denial of service",
+        "Description": "The csv-parse module before 4.4.6 for Node.js is vulnerable to Regular Expression Denial of Service. The __isInt() function contains a malformed regular expression that processes large crafted input very slowly. This is triggered when using the cast option.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://github.com/adaltas/node-csv-parse/commit/b9d35940c6815cdf1dfd6b21857a1f6d0fd51e4a",
+          "https://github.com/advisories/GHSA-582f-p4pg-xc74",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/Z36UKPO5F3PQ3Q2POMF5LEKXWAH5RUFP/",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-17592",
+          "https://security.netapp.com/advisory/ntap-20191127-0002/",
+          "https://www.npmjs.com/advisories/1171"
+        ],
+        "PublishedDate": "2019-10-14T20:15:00Z",
+        "LastModifiedDate": "2019-11-27T07:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16137",
+        "PkgName": "debug",
+        "InstalledVersion": "2.2.0",
+        "FixedVersion": "3.1.0, 2.6.9",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16137",
+        "Title": "nodejs-debug: Regular expression Denial of Service",
+        "Description": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16137",
+          "https://github.com/advisories/GHSA-gxpj-cx7g-858c",
+          "https://github.com/visionmedia/debug/issues/501",
+          "https://github.com/visionmedia/debug/pull/504",
+          "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3@%3Ccommits.netbeans.apache.org%3E",
+          "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63@%3Cnotifications.netbeans.apache.org%3E",
+          "https://nodesecurity.io/advisories/534",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16137"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16137",
+        "PkgName": "debug",
+        "InstalledVersion": "2.6.8",
+        "FixedVersion": "3.1.0, 2.6.9",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16137",
+        "Title": "nodejs-debug: Regular expression Denial of Service",
+        "Description": "The debug module is vulnerable to regular expression denial of service when untrusted user input is passed into the o formatter. It takes around 50k characters to block for 2 seconds making this a low severity issue.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16137",
+          "https://github.com/advisories/GHSA-gxpj-cx7g-858c",
+          "https://github.com/visionmedia/debug/issues/501",
+          "https://github.com/visionmedia/debug/pull/504",
+          "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3@%3Ccommits.netbeans.apache.org%3E",
+          "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63@%3Cnotifications.netbeans.apache.org%3E",
+          "https://nodesecurity.io/advisories/534",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16137"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3750",
+        "PkgName": "deep-extend",
+        "InstalledVersion": "0.4.2",
+        "FixedVersion": "0.5.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3750",
+        "Title": "nodejs-deep-extend: Prototype pollution can allow attackers to modify object properties",
+        "Description": "The utilities function in all versions \u003c= 0.5.0 of the deep-extend node module can be tricked into modifying the prototype of Object when the attacker can control part of the structure passed to this function. This can let an attacker add or modify existing properties that will exist on all objects.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:L",
+            "V3Score": 4.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3750",
+          "https://github.com/advisories/GHSA-hr2v-3952-633q",
+          "https://hackerone.com/reports/311333",
+          "https://nodesecurity.io/advisories/612",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3750"
+        ],
+        "PublishedDate": "2018-07-03T21:29:00Z",
+        "LastModifiedDate": "2018-08-23T13:12:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-408",
+        "PkgName": "deep-extend",
+        "InstalledVersion": "0.4.2",
+        "FixedVersion": "\u003e=0.5.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/311333",
+        "Title": "deep-extend prototype pollution",
+        "Description": "deep-extend node module suffers from a prototype pollution vulnerability",
+        "Severity": "LOW",
+        "References": [
+          "https://hackerone.com/reports/311333"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2020-8116",
+        "PkgName": "dot-prop",
+        "InstalledVersion": "4.2.0",
+        "FixedVersion": "5.1.1, 4.2.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8116",
+        "Title": "nodejs-dot-prop: prototype pollution",
+        "Description": "Prototype pollution vulnerability in dot-prop npm package versions before 4.2.1 and versions 5.x before 5.1.1 allows an attacker to add arbitrary properties to JavaScript language constructs such as objects.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-425"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 7.5,
+            "V3Score": 7.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 7.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8116",
+          "https://github.com/advisories/GHSA-ff7x-qrg7-qggm",
+          "https://github.com/sindresorhus/dot-prop/issues/63",
+          "https://github.com/sindresorhus/dot-prop/tree/v4",
+          "https://hackerone.com/reports/719856",
+          "https://linux.oracle.com/cve/CVE-2020-8116.html",
+          "https://linux.oracle.com/errata/ELSA-2021-0548.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-8116"
+        ],
+        "PublishedDate": "2020-02-04T20:15:00Z",
+        "LastModifiedDate": "2020-09-10T15:16:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-1000228",
+        "PkgName": "ejs",
+        "InstalledVersion": "2.4.1",
+        "FixedVersion": "2.5.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-1000228",
+        "Title": "High severity vulnerability that affects ejs",
+        "Description": "nodejs ejs versions older than 2.5.3 is vulnerable to remote code execution due to weak input validation in ejs.renderFile() function",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 10,
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/101897",
+          "https://github.com/advisories/GHSA-3w5v-p54c-f74x",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-1000228",
+          "https://snyk.io/vuln/npm:ejs:20161128"
+        ],
+        "PublishedDate": "2017-11-17T03:29:00Z",
+        "LastModifiedDate": "2017-11-30T12:48:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-1000189",
+        "PkgName": "ejs",
+        "InstalledVersion": "2.4.1",
+        "FixedVersion": "2.5.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-1000189",
+        "Title": "nodejs-ejs: Denial of Service via renderFile() by overriding localNames",
+        "Description": "nodejs ejs version older than 2.5.5 is vulnerable to a denial-of-service due to weak input validation in the ejs.renderFile()",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:L",
+            "V2Score": 4.3,
+            "V3Score": 4.7
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/101893",
+          "https://github.com/advisories/GHSA-6x77-rpqf-j6mw",
+          "https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-1000189",
+          "https://snyk.io/vuln/npm:ejs:20161130-1"
+        ],
+        "PublishedDate": "2017-11-17T03:29:00Z",
+        "LastModifiedDate": "2017-11-30T11:58:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-1000188",
+        "PkgName": "ejs",
+        "InstalledVersion": "2.4.1",
+        "FixedVersion": "2.5.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-1000188",
+        "Title": "nodejs-ejs: Cross-site scripting via ejs.renderFile()",
+        "Description": "nodejs ejs version older than 2.5.5 is vulnerable to a Cross-site-scripting in the ejs.renderFile() resulting in code injection",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-79"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.1
+          },
+          "redhat": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.1
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/101889",
+          "https://github.com/advisories/GHSA-hwcf-pp87-7x6p",
+          "https://github.com/mde/ejs/commit/49264e0037e313a0a3e033450b5c184112516d8f",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-1000188",
+          "https://snyk.io/vuln/npm:ejs:20161130"
+        ],
+        "PublishedDate": "2017-11-17T03:29:00Z",
+        "LastModifiedDate": "2017-11-30T11:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-13822",
+        "PkgName": "elliptic",
+        "InstalledVersion": "6.4.0",
+        "FixedVersion": "6.5.3",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-13822",
+        "Title": "nodejs-elliptic: improper encoding checks allows a certain degree of signature malleability in ECDSA signatures",
+        "Description": "The Elliptic package 6.5.2 for Node.js allows ECDSA signature malleability via variations in encoding, leading '\\0' bytes, or integer overflows. This could conceivably have a security-relevant impact if an application relied on a single canonical signature.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-190"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+            "V2Score": 6.8,
+            "V3Score": 7.7
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L",
+            "V3Score": 7.7
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13822",
+          "https://github.com/advisories/GHSA-vh7m-p724-62c2",
+          "https://github.com/indutny/elliptic/issues/226",
+          "https://medium.com/@herman_10687/malleability-attack-why-it-matters-7b5f59fb99a4",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-13822",
+          "https://snyk.io/vuln/SNYK-JS-ELLIPTIC-571484",
+          "https://www.npmjs.com/package/elliptic",
+          "https://yondon.blog/2019/01/01/how-not-to-use-ecdsa/"
+        ],
+        "PublishedDate": "2020-06-04T15:15:00Z",
+        "LastModifiedDate": "2020-07-02T13:17:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-28498",
+        "PkgName": "elliptic",
+        "InstalledVersion": "6.4.0",
+        "FixedVersion": "6.5.4",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28498",
+        "Title": "Use of a Broken or Risky Cryptographic Algorithm",
+        "Description": "The package elliptic before 6.5.4 are vulnerable to Cryptographic Issues via the secp256k1 implementation in elliptic/ec/key.js. There is no check to confirm that the public key point passed into the derive function actually exists on the secp256k1 curve. This results in the potential for the private key used in this implementation to be revealed after a number of ECDH operations are performed.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-327"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.8
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-r9p9-mrjm-926w",
+          "https://github.com/christianlundkvist/blog/blob/master/2020_05_26_secp256k1_twist_attacks/secp256k1_twist_attacks.md",
+          "https://github.com/indutny/elliptic/commit/441b7428b0e8f6636c42118ad2aaa186d3c34c3f",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-28498",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1069836",
+          "https://snyk.io/vuln/SNYK-JS-ELLIPTIC-1064899"
+        ],
+        "PublishedDate": "2021-02-02T19:15:00Z",
+        "LastModifiedDate": "2021-02-08T17:35:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-15084",
+        "PkgName": "express-jwt",
+        "InstalledVersion": "3.3.0",
+        "FixedVersion": "6.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-15084",
+        "Title": "Authorization bypass in express-jwt",
+        "Description": "In express-jwt (NPM package) up and including version 5.3.3, the algorithms entry to be specified in the configuration is not being enforced. When algorithms is not specified in the configuration, with the combination of jwks-rsa, it may lead to authorization bypass. You are affected by this vulnerability if all of the following conditions apply: - You are using express-jwt - You do not have **algorithms** configured in your express-jwt configuration. - You are using libraries such as jwks-rsa as the **secret**. You can fix this by specifying **algorithms** in the express-jwt configuration. See linked GHSA for example. This is also fixed in version 6.0.0.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-285"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+            "V2Score": 4.3,
+            "V3Score": 9.1
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-6g6m-m6h5-w9gf",
+          "https://github.com/auth0/express-jwt/commit/7ecab5f8f0cab5297c2b863596566eb0c019cdef",
+          "https://github.com/auth0/express-jwt/security/advisories/GHSA-6g6m-m6h5-w9gf",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-15084"
+        ],
+        "PublishedDate": "2020-06-30T16:15:00Z",
+        "LastModifiedDate": "2020-07-08T16:29:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-16492",
+        "PkgName": "extend",
+        "InstalledVersion": "3.0.1",
+        "FixedVersion": "2.0.2, 3.0.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16492",
+        "Title": "nodejs-extend: Prototype pollution can allow attackers to modify object properties",
+        "Description": "A prototype pollution vulnerability was found in module extend \u003c2.0.2, ~\u003c3.0.2 that allows an attacker to inject arbitrary properties onto Object.prototype.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-74"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
+            "V3Score": 4.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16492",
+          "https://github.com/advisories/GHSA-qrmc-fj45-qfc2",
+          "https://hackerone.com/reports/381185",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-16492",
+          "https://snyk.io/vuln/npm:extend:20180424",
+          "https://www.npmjs.com/advisories/996"
+        ],
+        "PublishedDate": "2019-02-01T18:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:36:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16119",
+        "PkgName": "fresh",
+        "InstalledVersion": "0.3.0",
+        "FixedVersion": "0.5.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16119",
+        "Title": "nodejs-fresh: Regular expression denial of service when parsing crafted user input",
+        "Description": "Fresh is a module used by the Express.js framework for HTTP response freshness testing. It is vulnerable to a regular expression denial of service when it is passed specially crafted input to parse. This causes the event loop to be blocked causing a denial of service condition.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16119",
+          "https://github.com/advisories/GHSA-9qj9-36jm-prpv",
+          "https://nodesecurity.io/advisories/526",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16119"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-13173",
+        "PkgName": "fstream",
+        "InstalledVersion": "1.0.11",
+        "FixedVersion": "1.0.12",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-13173",
+        "Title": "nodejs-fstream: File overwrite in fstream.DirWriter() function",
+        "Description": "fstream before 1.0.12 is vulnerable to Arbitrary File Overwrite. Extracting tarballs containing a hardlink to a file that already exists in the system, and a file that matches the hardlink, will overwrite the system's file with the contents of the extracted file. The fstream.DirWriter() function is vulnerable.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-59"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 6.4,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 7.3
+          }
+        },
+        "References": [
+          "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00010.html",
+          "http://lists.opensuse.org/opensuse-security-announce/2019-08/msg00052.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13173",
+          "https://github.com/advisories/GHSA-xf7w-r453-m56c",
+          "https://github.com/npm/fstream/commit/6a77d2fa6e1462693cf8e46f930da96ec1b0bb22",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-13173",
+          "https://ubuntu.com/security/notices/USN-4123-1",
+          "https://usn.ubuntu.com/4123-1/",
+          "https://www.npmjs.com/advisories/886"
+        ],
+        "PublishedDate": "2019-07-02T20:15:00Z",
+        "LastModifiedDate": "2020-08-24T17:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-28469",
+        "PkgName": "glob-parent",
+        "InstalledVersion": "2.0.0",
+        "FixedVersion": "5.1.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28469",
+        "Title": "nodejs-glob-parent: Regular expression denial of service",
+        "Description": "This affects the package glob-parent before 5.1.2. The enclosure regex used to check for strings ending in enclosure containing path separator.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28469",
+          "https://github.com/advisories/GHSA-ww39-953v-wcq6",
+          "https://github.com/gulpjs/glob-parent/blob/6ce8d11f2f1ed8e80a9526b1dc8cf3aa71f43474/index.js%23L9",
+          "https://github.com/gulpjs/glob-parent/commit/f9231168b0041fea3f8f954b3cceb56269fc6366",
+          "https://github.com/gulpjs/glob-parent/pull/36",
+          "https://github.com/gulpjs/glob-parent/releases/tag/v5.1.2",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-28469",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBES128-1059093",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1059092",
+          "https://snyk.io/vuln/SNYK-JS-GLOBPARENT-1016905"
+        ],
+        "PublishedDate": "2021-06-03T16:15:00Z",
+        "LastModifiedDate": "2021-06-11T18:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-19919",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "4.3.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-19919",
+        "Title": "nodejs-handlebars: prototype pollution leading to remote code execution via crafted payloads",
+        "Description": "Versions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object's __proto__ and __defineGetter__ properties, which may allow an attacker to execute arbitrary code through crafted payloads.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-74"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+            "V3Score": 4.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19919",
+          "https://github.com/advisories/GHSA-w457-6q6x-cgp9",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-19919",
+          "https://www.npmjs.com/advisories/1164"
+        ],
+        "PublishedDate": "2019-12-20T23:15:00Z",
+        "LastModifiedDate": "2019-12-23T19:37:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23369",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "4.7.7",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23369",
+        "Title": "nodejs-handlebars: Remote code execution when compiling untrusted compile templates with strict:true option",
+        "Description": "The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming from an untrusted source.",
+        "Severity": "CRITICAL",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 9.8
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23369",
+          "https://github.com/advisories/GHSA-f2jv-r9rf-7988",
+          "https://github.com/handlebars-lang/handlebars.js/commit/b6d3de7123eebba603e321f04afdbae608e8fea8",
+          "https://github.com/handlebars-lang/handlebars.js/commit/f0589701698268578199be25285b2ebea1c1e427",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23369",
+          "https://security.netapp.com/advisory/ntap-20210604-0008/",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074950",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074951",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074952",
+          "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-1056767"
+        ],
+        "PublishedDate": "2021-04-12T14:15:00Z",
+        "LastModifiedDate": "2021-06-08T13:54:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-q42p-pg8m-cqh6",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "3.0.7, 4.0.14, 4.1.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-q42p-pg8m-cqh6",
+        "Title": "Prototype Pollution in handlebars",
+        "Description": "Versions of `handlebars` prior to 4.0.14 are vulnerable to Prototype Pollution. Templates may alter an Objects' prototype, thus allowing an attacker to execute arbitrary code on the server.\n\n\n## Recommendation\n\nFor handlebars 4.1.x upgrade to 4.1.2 or later.\nFor handlebars 4.0.x upgrade to 4.0.14 or later.",
+        "Severity": "CRITICAL",
+        "References": [
+          "https://github.com/advisories/GHSA-q42p-pg8m-cqh6",
+          "https://github.com/handlebars-lang/handlebars.js/issues/1495"
+        ]
+      },
+      {
+        "VulnerabilityID": "GHSA-2cf5-4w76-r9qv",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "4.5.2, 3.0.8",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-2cf5-4w76-r9qv",
+        "Title": "Arbitrary Code Execution in handlebars",
+        "Description": "Versions of `handlebars` prior to 3.0.8 or 4.5.2 are vulnerable to Arbitrary Code Execution. The package's lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It can be used to run arbitrary code in a server processing Handlebars templates or on a victim's browser (effectively serving as Cross-Site Scripting).\n\nThe following template can be used to demonstrate the vulnerability:  \n```{{#with \"constructor\"}}\n\t{{#with split as |a|}}\n\t\t{{pop (push \"alert('Vulnerable Handlebars JS');\")}}\n\t\t{{#with (concat (lookup join (slice 0 1)))}}\n\t\t\t{{#each (slice 2 3)}}\n\t\t\t\t{{#with (apply 0 a)}}\n\t\t\t\t\t{{.}}\n\t\t\t\t{{/with}}\n\t\t\t{{/each}}\n\t\t{{/with}}\n\t{{/with}}\n{{/with}}```\n\n\n## Recommendation\n\nUpgrade to version 3.0.8, 4.5.2 or later.",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/advisories/GHSA-2cf5-4w76-r9qv",
+          "https://www.npmjs.com/advisories/1316"
+        ]
+      },
+      {
+        "VulnerabilityID": "GHSA-g9r4-xpmj-mj65",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "4.5.3, 3.0.8",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-g9r4-xpmj-mj65",
+        "Title": "Prototype Pollution in handlebars",
+        "Description": "Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to prototype pollution. It is possible to add or modify properties to the Object prototype through a malicious template. This may allow attackers to crash the application or execute Arbitrary Code in specific conditions.\n\n\n## Recommendation\n\nUpgrade to version 3.0.8, 4.5.3 or later.",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/advisories/GHSA-g9r4-xpmj-mj65",
+          "https://www.npmjs.com/advisories/1325"
+        ]
+      },
+      {
+        "VulnerabilityID": "GHSA-q2c6-c6pm-g3gh",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "4.5.3, 3.0.8",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-q2c6-c6pm-g3gh",
+        "Title": "Arbitrary Code Execution in handlebars",
+        "Description": "Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to Arbitrary Code Execution. The package's lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It is due to an incomplete fix for a [previous issue](https://www.npmjs.com/advisories/1316). This vulnerability can be used to run arbitrary code in a server processing Handlebars templates or on a victim's browser (effectively serving as Cross-Site Scripting).\n\n\n## Recommendation\n\nUpgrade to version 3.0.8, 4.5.3 or later.",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/advisories/GHSA-q2c6-c6pm-g3gh",
+          "https://www.npmjs.com/advisories/1324"
+        ]
+      },
+      {
+        "VulnerabilityID": "GHSA-f52g-6jhx-586p",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "4.4.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-f52g-6jhx-586p",
+        "Title": "Denial of Service in handlebars",
+        "Description": "Affected versions of `handlebars` are vulnerable to Denial of Service. The package's parser may be forced into an endless loop while processing specially-crafted templates. This may allow attackers to exhaust system resources leading to Denial of Service.\n\n\n## Recommendation\n\nUpgrade to version 4.4.5 or later.",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-f52g-6jhx-586p",
+          "https://www.npmjs.com/advisories/1300"
+        ]
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-519",
+        "PkgName": "handlebars",
+        "InstalledVersion": "4.0.10",
+        "FixedVersion": "\u003e=4.6.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/726364",
+        "Title": "Denial of Service",
+        "Description": "Crash Node.js process from handlebars using a small and simple source",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://hackerone.com/reports/726364"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3728",
+        "PkgName": "hoek",
+        "InstalledVersion": "2.16.3",
+        "FixedVersion": "5.0.3, 4.2.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3728",
+        "Title": "hoek: Prototype pollution in utilities function",
+        "Description": "hoek node module before 4.2.0 and 5.0.x before 5.0.3 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via 'merge' and 'applyToDefaults' functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+        "Severity": "LOW",
+        "CweIDs": [
+          "CWE-471"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.5,
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 2.9
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/103108",
+          "https://access.redhat.com/errata/RHSA-2018:1263",
+          "https://access.redhat.com/errata/RHSA-2018:1264",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3728",
+          "https://github.com/advisories/GHSA-jp4x-w63m-7wgm",
+          "https://github.com/hapijs/hoek/commit/32ed5c9413321fbc37da5ca81a7cbab693786dee",
+          "https://hackerone.com/reports/310439",
+          "https://nodesecurity.io/advisories/566",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3728",
+          "https://snyk.io/vuln/npm:hoek:20180212"
+        ],
+        "PublishedDate": "2018-03-30T19:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:40:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3728",
+        "PkgName": "hoek",
+        "InstalledVersion": "4.2.0",
+        "FixedVersion": "5.0.3, 4.2.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3728",
+        "Title": "hoek: Prototype pollution in utilities function",
+        "Description": "hoek node module before 4.2.0 and 5.0.x before 5.0.3 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via 'merge' and 'applyToDefaults' functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+        "Severity": "LOW",
+        "CweIDs": [
+          "CWE-471"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.5,
+            "V3Score": 8.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 2.9
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/103108",
+          "https://access.redhat.com/errata/RHSA-2018:1263",
+          "https://access.redhat.com/errata/RHSA-2018:1264",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3728",
+          "https://github.com/advisories/GHSA-jp4x-w63m-7wgm",
+          "https://github.com/hapijs/hoek/commit/32ed5c9413321fbc37da5ca81a7cbab693786dee",
+          "https://hackerone.com/reports/310439",
+          "https://nodesecurity.io/advisories/566",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3728",
+          "https://snyk.io/vuln/npm:hoek:20180212"
+        ],
+        "PublishedDate": "2018-03-30T19:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:40:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-7788",
+        "PkgName": "ini",
+        "InstalledVersion": "1.3.4",
+        "FixedVersion": "1.3.6",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7788",
+        "Title": "nodejs-ini: prototype pollution via malicious INI file",
+        "Description": "This affects the package ini before 1.3.6. If an attacker submits a malicious INI file to an application that parses it with ini.parse, they will pollute the prototype on the application. This can be exploited further depending on the context.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 7.5,
+            "V3Score": 7.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 7.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7788",
+          "https://github.com/advisories/GHSA-qqgx-2p2h-9c37",
+          "https://github.com/npm/ini/commit/56d2805e07ccd94e2ba0984ac9240ff02d44b6f1",
+          "https://github.com/npm/ini/commit/56d2805e07ccd94e2ba0984ac9240ff02d44b6f1 (v1.3.6)",
+          "https://linux.oracle.com/cve/CVE-2020-7788.html",
+          "https://linux.oracle.com/errata/ELSA-2021-0551.html",
+          "https://lists.debian.org/debian-lts-announce/2020/12/msg00032.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-7788",
+          "https://snyk.io/vuln/SNYK-JS-INI-1048974"
+        ],
+        "PublishedDate": "2020-12-11T11:15:00Z",
+        "LastModifiedDate": "2020-12-23T15:42:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-2537",
+        "PkgName": "is-my-json-valid",
+        "InstalledVersion": "2.16.1",
+        "FixedVersion": "1.4.1, 2.17.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2537",
+        "Title": "Regular Expression Denial of Service",
+        "Description": "The is-my-json-valid package before 2.12.4 for Node.js has an incorrect exports['utc-millisec'] regular expression, which allows remote attackers to cause a denial of service (blocked event loop) via a crafted string.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-f522-ffg8-j8r6",
+          "https://github.com/mafintosh/is-my-json-valid/commit/eca4beb21e61877d76fdf6bea771f72f39544d9b",
+          "https://nodesecurity.io/advisories/76",
+          "https://nvd.nist.gov/vuln/detail/CVE-2016-2537",
+          "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
+        ],
+        "PublishedDate": "2016-02-23T05:59:00Z",
+        "LastModifiedDate": "2016-02-29T22:22:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-375",
+        "PkgName": "is-my-json-valid",
+        "InstalledVersion": "2.16.1",
+        "FixedVersion": "\u003e=1.4.1 \u003c2.0.0, \u003e=2.17.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/317548",
+        "Title": "Regular Expression Denial of Service (ReDoS)",
+        "Description": "is-my-json-valid is vulnerable to Regular Expression Denial of Service (ReDoS) attacks via the email validation function",
+        "Severity": "LOW",
+        "References": [
+          "https://github.com/mafintosh/is-my-json-valid/commit/b3051b277f7caa08cd2edc6f74f50aeda65d2976",
+          "https://github.com/mafintosh/is-my-json-valid/pull/159",
+          "https://hackerone.com/reports/317548"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2019-10744",
+        "PkgName": "lodash",
+        "InstalledVersion": "3.10.1",
+        "FixedVersion": "4.17.12",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-10744",
+        "Title": "nodejs-lodash: prototype pollution in defaultsDeep function leading to modifying properties",
+        "Description": "Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+        "Severity": "CRITICAL",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V2Score": 6.4,
+            "V3Score": 9.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 9.1
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2019:3024",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10744",
+          "https://github.com/advisories/GHSA-jf85-cpcp-j695",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-10744",
+          "https://security.netapp.com/advisory/ntap-20191004-0005/",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-450202",
+          "https://support.f5.com/csp/article/K47105354?utm_source=f5support\u0026amp;utm_medium=RSS",
+          "https://www.oracle.com/security-alerts/cpujan2021.html",
+          "https://www.oracle.com/security-alerts/cpuoct2020.html"
+        ],
+        "PublishedDate": "2019-07-26T00:15:00Z",
+        "LastModifiedDate": "2021-03-16T13:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-16487",
+        "PkgName": "lodash",
+        "InstalledVersion": "3.10.1",
+        "FixedVersion": "4.17.11",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16487",
+        "Title": "lodash: Prototype pollution in utilities function",
+        "Description": "A prototype pollution vulnerability was found in lodash \u003c4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 6.8,
+            "V3Score": 5.6
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5.6
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16487",
+          "https://github.com/advisories/GHSA-4xc9-xhrj-v574",
+          "https://hackerone.com/reports/380873",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-16487",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/"
+        ],
+        "PublishedDate": "2019-02-01T18:29:00Z",
+        "LastModifiedDate": "2020-09-18T16:38:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-8203",
+        "PkgName": "lodash",
+        "InstalledVersion": "3.10.1",
+        "FixedVersion": "4.17.19",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8203",
+        "Title": "nodejs-lodash: prototype pollution in zipObjectDeep function",
+        "Description": "Prototype pollution attack when using _.zipObjectDeep in lodash before 4.17.20.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V2Score": 5.8,
+            "V3Score": 7.4
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 7.4
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-p6mc-m468-83gw",
+          "https://github.com/lodash/lodash/issues/4874",
+          "https://hackerone.com/reports/712065",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-8203",
+          "https://security.netapp.com/advisory/ntap-20200724-0006/",
+          "https://www.npmjs.com/advisories/1523",
+          "https://www.oracle.com/security-alerts/cpuApr2021.html"
+        ],
+        "PublishedDate": "2020-07-15T17:15:00Z",
+        "LastModifiedDate": "2021-06-14T18:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23337",
+        "PkgName": "lodash",
+        "InstalledVersion": "3.10.1",
+        "FixedVersion": "4.17.21",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23337",
+        "Title": "nodejs-lodash: command injection via template",
+        "Description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-77"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23337",
+          "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+          "https://github.com/lodash/lodash/blob/ddfd9b11a0126db2302cb70ec9973b66baec0975/lodash.js%23L14851",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+          "https://security.netapp.com/advisory/ntap-20210312-0006/",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGFUJIONWEBJARS-1074932",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074930",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-1040724"
+        ],
+        "PublishedDate": "2021-02-15T13:15:00Z",
+        "LastModifiedDate": "2021-03-26T02:42:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-1010266",
+        "PkgName": "lodash",
+        "InstalledVersion": "3.10.1",
+        "FixedVersion": "4.17.11",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010266",
+        "Title": "lodash: uncontrolled resource consumption in Data handler causing denial of service",
+        "Description": "lodash prior to 4.17.11 is affected by: CWE-400: Uncontrolled Resource Consumption. The impact is: Denial of service. The component is: Date handler. The attack vector is: Attacker provides very long strings, which the library attempts to match using a regular expression. The fixed version is: 4.17.11.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 4.4
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1010266",
+          "https://github.com/advisories/GHSA-x5rq-j2xg-h7qm",
+          "https://github.com/lodash/lodash/issues/3359",
+          "https://github.com/lodash/lodash/wiki/Changelog",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-1010266",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-73639"
+        ],
+        "PublishedDate": "2019-07-17T21:15:00Z",
+        "LastModifiedDate": "2020-09-30T13:40:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3721",
+        "PkgName": "lodash",
+        "InstalledVersion": "3.10.1",
+        "FixedVersion": "4.17.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3721",
+        "Title": "lodash: Prototype pollution in utilities function",
+        "Description": "lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+        "Severity": "LOW",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 2.9
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3721",
+          "https://github.com/advisories/GHSA-fvqr-27wr-82fm",
+          "https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a",
+          "https://hackerone.com/reports/310443",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3721",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/",
+          "https://snyk.io/vuln/npm:lodash:20180130",
+          "https://www.npmjs.com/advisories/577"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-03T00:03:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-10744",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.2",
+        "FixedVersion": "4.17.12",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-10744",
+        "Title": "nodejs-lodash: prototype pollution in defaultsDeep function leading to modifying properties",
+        "Description": "Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+        "Severity": "CRITICAL",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V2Score": 6.4,
+            "V3Score": 9.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 9.1
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2019:3024",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10744",
+          "https://github.com/advisories/GHSA-jf85-cpcp-j695",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-10744",
+          "https://security.netapp.com/advisory/ntap-20191004-0005/",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-450202",
+          "https://support.f5.com/csp/article/K47105354?utm_source=f5support\u0026amp;utm_medium=RSS",
+          "https://www.oracle.com/security-alerts/cpujan2021.html",
+          "https://www.oracle.com/security-alerts/cpuoct2020.html"
+        ],
+        "PublishedDate": "2019-07-26T00:15:00Z",
+        "LastModifiedDate": "2021-03-16T13:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-16487",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.2",
+        "FixedVersion": "4.17.11",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16487",
+        "Title": "lodash: Prototype pollution in utilities function",
+        "Description": "A prototype pollution vulnerability was found in lodash \u003c4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 6.8,
+            "V3Score": 5.6
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5.6
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16487",
+          "https://github.com/advisories/GHSA-4xc9-xhrj-v574",
+          "https://hackerone.com/reports/380873",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-16487",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/"
+        ],
+        "PublishedDate": "2019-02-01T18:29:00Z",
+        "LastModifiedDate": "2020-09-18T16:38:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-8203",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.2",
+        "FixedVersion": "4.17.19",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8203",
+        "Title": "nodejs-lodash: prototype pollution in zipObjectDeep function",
+        "Description": "Prototype pollution attack when using _.zipObjectDeep in lodash before 4.17.20.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V2Score": 5.8,
+            "V3Score": 7.4
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 7.4
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-p6mc-m468-83gw",
+          "https://github.com/lodash/lodash/issues/4874",
+          "https://hackerone.com/reports/712065",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-8203",
+          "https://security.netapp.com/advisory/ntap-20200724-0006/",
+          "https://www.npmjs.com/advisories/1523",
+          "https://www.oracle.com/security-alerts/cpuApr2021.html"
+        ],
+        "PublishedDate": "2020-07-15T17:15:00Z",
+        "LastModifiedDate": "2021-06-14T18:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23337",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.2",
+        "FixedVersion": "4.17.21",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23337",
+        "Title": "nodejs-lodash: command injection via template",
+        "Description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-77"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23337",
+          "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+          "https://github.com/lodash/lodash/blob/ddfd9b11a0126db2302cb70ec9973b66baec0975/lodash.js%23L14851",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+          "https://security.netapp.com/advisory/ntap-20210312-0006/",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGFUJIONWEBJARS-1074932",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074930",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-1040724"
+        ],
+        "PublishedDate": "2021-02-15T13:15:00Z",
+        "LastModifiedDate": "2021-03-26T02:42:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-1010266",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.2",
+        "FixedVersion": "4.17.11",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010266",
+        "Title": "lodash: uncontrolled resource consumption in Data handler causing denial of service",
+        "Description": "lodash prior to 4.17.11 is affected by: CWE-400: Uncontrolled Resource Consumption. The impact is: Denial of service. The component is: Date handler. The attack vector is: Attacker provides very long strings, which the library attempts to match using a regular expression. The fixed version is: 4.17.11.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 4.4
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1010266",
+          "https://github.com/advisories/GHSA-x5rq-j2xg-h7qm",
+          "https://github.com/lodash/lodash/issues/3359",
+          "https://github.com/lodash/lodash/wiki/Changelog",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-1010266",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-73639"
+        ],
+        "PublishedDate": "2019-07-17T21:15:00Z",
+        "LastModifiedDate": "2020-09-30T13:40:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3721",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.2",
+        "FixedVersion": "4.17.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3721",
+        "Title": "lodash: Prototype pollution in utilities function",
+        "Description": "lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+        "Severity": "LOW",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 2.9
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3721",
+          "https://github.com/advisories/GHSA-fvqr-27wr-82fm",
+          "https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a",
+          "https://hackerone.com/reports/310443",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3721",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/",
+          "https://snyk.io/vuln/npm:lodash:20180130",
+          "https://www.npmjs.com/advisories/577"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-03T00:03:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-10744",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": "4.17.12",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-10744",
+        "Title": "nodejs-lodash: prototype pollution in defaultsDeep function leading to modifying properties",
+        "Description": "Versions of lodash lower than 4.17.12 are vulnerable to Prototype Pollution. The function defaultsDeep could be tricked into adding or modifying properties of Object.prototype using a constructor payload.",
+        "Severity": "CRITICAL",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V2Score": 6.4,
+            "V3Score": 9.1
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 9.1
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2019:3024",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10744",
+          "https://github.com/advisories/GHSA-jf85-cpcp-j695",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-10744",
+          "https://security.netapp.com/advisory/ntap-20191004-0005/",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-450202",
+          "https://support.f5.com/csp/article/K47105354?utm_source=f5support\u0026amp;utm_medium=RSS",
+          "https://www.oracle.com/security-alerts/cpujan2021.html",
+          "https://www.oracle.com/security-alerts/cpuoct2020.html"
+        ],
+        "PublishedDate": "2019-07-26T00:15:00Z",
+        "LastModifiedDate": "2021-03-16T13:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-16487",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": "4.17.11",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16487",
+        "Title": "lodash: Prototype pollution in utilities function",
+        "Description": "A prototype pollution vulnerability was found in lodash \u003c4.17.11 where the functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of Object.prototype.",
+        "Severity": "HIGH",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 6.8,
+            "V3Score": 5.6
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5.6
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16487",
+          "https://github.com/advisories/GHSA-4xc9-xhrj-v574",
+          "https://hackerone.com/reports/380873",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-16487",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/"
+        ],
+        "PublishedDate": "2019-02-01T18:29:00Z",
+        "LastModifiedDate": "2020-09-18T16:38:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-8203",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": "4.17.19",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8203",
+        "Title": "nodejs-lodash: prototype pollution in zipObjectDeep function",
+        "Description": "Prototype pollution attack when using _.zipObjectDeep in lodash before 4.17.20.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V2Score": 5.8,
+            "V3Score": 7.4
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H",
+            "V3Score": 7.4
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-p6mc-m468-83gw",
+          "https://github.com/lodash/lodash/issues/4874",
+          "https://hackerone.com/reports/712065",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-8203",
+          "https://security.netapp.com/advisory/ntap-20200724-0006/",
+          "https://www.npmjs.com/advisories/1523",
+          "https://www.oracle.com/security-alerts/cpuApr2021.html"
+        ],
+        "PublishedDate": "2020-07-15T17:15:00Z",
+        "LastModifiedDate": "2021-06-14T18:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23337",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": "4.17.21",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23337",
+        "Title": "nodejs-lodash: command injection via template",
+        "Description": "Lodash versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-77"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 6.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23337",
+          "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+          "https://github.com/lodash/lodash/blob/ddfd9b11a0126db2302cb70ec9973b66baec0975/lodash.js%23L14851",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+          "https://security.netapp.com/advisory/ntap-20210312-0006/",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGFUJIONWEBJARS-1074932",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074930",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-1040724"
+        ],
+        "PublishedDate": "2021-02-15T13:15:00Z",
+        "LastModifiedDate": "2021-03-26T02:42:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-1010266",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": "4.17.11",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010266",
+        "Title": "lodash: uncontrolled resource consumption in Data handler causing denial of service",
+        "Description": "lodash prior to 4.17.11 is affected by: CWE-400: Uncontrolled Resource Consumption. The impact is: Denial of service. The component is: Date handler. The attack vector is: Attacker provides very long strings, which the library attempts to match using a regular expression. The fixed version is: 4.17.11.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-770"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+            "V3Score": 4.4
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-1010266",
+          "https://github.com/advisories/GHSA-x5rq-j2xg-h7qm",
+          "https://github.com/lodash/lodash/issues/3359",
+          "https://github.com/lodash/lodash/wiki/Changelog",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-1010266",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/",
+          "https://snyk.io/vuln/SNYK-JS-LODASH-73639"
+        ],
+        "PublishedDate": "2019-07-17T21:15:00Z",
+        "LastModifiedDate": "2020-09-30T13:40:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3721",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": "4.17.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3721",
+        "Title": "lodash: Prototype pollution in utilities function",
+        "Description": "lodash node module before 4.17.5 suffers from a Modification of Assumed-Immutable Data (MAID) vulnerability via defaultsDeep, merge, and mergeWith functions, which allows a malicious user to modify the prototype of \"Object\" via __proto__, causing the addition or modification of an existing property that will exist on all objects.",
+        "Severity": "LOW",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 4,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 2.9
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3721",
+          "https://github.com/advisories/GHSA-fvqr-27wr-82fm",
+          "https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a",
+          "https://hackerone.com/reports/310443",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3721",
+          "https://security.netapp.com/advisory/ntap-20190919-0004/",
+          "https://snyk.io/vuln/npm:lodash:20180130",
+          "https://www.npmjs.com/advisories/577"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-03T00:03:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16114",
+        "PkgName": "marked",
+        "InstalledVersion": "0.3.6",
+        "FixedVersion": "0.3.9",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16114",
+        "Title": "Regular Expression Denial of Service in marked",
+        "Description": "The marked module is vulnerable to a regular expression denial of service. Based on the information published in the public issue, 1k characters can block for around 6 seconds.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16114",
+          "https://github.com/advisories/GHSA-x5pg-88wf-qq4p",
+          "https://github.com/chjj/marked/issues/937",
+          "https://nodesecurity.io/advisories/531",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16114"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-1000427",
+        "PkgName": "marked",
+        "InstalledVersion": "0.3.6",
+        "FixedVersion": "0.3.7",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-1000427",
+        "Title": "Moderate severity vulnerability that affects marked",
+        "Description": "marked version 0.3.6 and earlier is vulnerable to an XSS attack in the data: URI parser.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-79"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+            "V2Score": 4.3,
+            "V3Score": 6.1
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000427",
+          "https://github.com/advisories/GHSA-7px7-7xjx-hxm8",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/BO2RMVVZVV6NFTU46B5RYRK7ZCXYARZS/",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/M6BJG6RGDH7ZWVVAUFBFI5L32RSMQN2S/",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-1000427",
+          "https://snyk.io/vuln/npm:marked:20170112"
+        ],
+        "PublishedDate": "2018-01-02T23:29:00Z",
+        "LastModifiedDate": "2020-05-31T06:15:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-xf5p-87ch-gxw2",
+        "PkgName": "marked",
+        "InstalledVersion": "0.3.6",
+        "FixedVersion": "0.3.18",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-xf5p-87ch-gxw2",
+        "Title": "Regular Expression Denial of Service in marked",
+        "Description": "Versions of `marked` prior to 0.6.2 and later than 0.3.14 are vulnerable to Regular Expression Denial of Service. Email addresses may be evaluated in quadratic time, allowing attackers to potentially crash the node process due to resource exhaustion.\n\n\n## Recommendation\n\nUpgrade to version 0.6.2 or later.",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-xf5p-87ch-gxw2",
+          "https://github.com/markedjs/marked/issues/1070"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16136",
+        "PkgName": "method-override",
+        "InstalledVersion": "2.3.5",
+        "FixedVersion": "2.3.10, 2.3.10",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16136",
+        "Title": "nodejs-method-override: Regular expression Denial of Service",
+        "Description": "method-override is a module used by the Express.js framework to let you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it. method-override is vulnerable to a regular expression denial of service vulnerability when specially crafted input is passed in to be parsed via the X-HTTP-Method-Override header.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-qx2f-477c-35rq",
+          "https://nodesecurity.io/advisories/538",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16136"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16138",
+        "PkgName": "mime",
+        "InstalledVersion": "1.3.4",
+        "FixedVersion": "2.0.3, 1.4.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16138",
+        "Title": "nodejs-mime: Regular expression Denial of Service",
+        "Description": "The mime module \u003c 1.4.1, 2.0.1, 2.0.2 is vulnerable to regular expression denial of service when a mime lookup is performed on untrusted user input.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16138",
+          "https://github.com/advisories/GHSA-wrvr-8mpx-r7pp",
+          "https://github.com/broofa/node-mime/commit/1df903fdeb9ae7eaa048795b8d580ce2c98f40b0 (2.x)",
+          "https://github.com/broofa/node-mime/commit/855d0c4b8b22e4a80b9401a81f2872058eae274d (1.x)",
+          "https://github.com/broofa/node-mime/issues/167",
+          "https://nodesecurity.io/advisories/535",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16138"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-7598",
+        "PkgName": "minimist",
+        "InstalledVersion": "0.0.8",
+        "FixedVersion": "1.2.3, 0.2.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7598",
+        "Title": "nodejs-minimist: prototype pollution allows adding or modifying properties of Object.prototype using a constructor or __proto__ payload",
+        "Description": "minimist before 1.2.2 could be tricked into adding or modifying properties of Object.prototype using a \"constructor\" or \"__proto__\" payload.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 6.8,
+            "V3Score": 5.6
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5.6
+          }
+        },
+        "References": [
+          "http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00024.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7598",
+          "https://github.com/advisories/GHSA-vh95-rmgr-6w4m",
+          "https://linux.oracle.com/cve/CVE-2020-7598.html",
+          "https://linux.oracle.com/errata/ELSA-2020-2852.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-7598",
+          "https://snyk.io/vuln/SNYK-JS-MINIMIST-559764"
+        ],
+        "PublishedDate": "2020-03-11T23:15:00Z",
+        "LastModifiedDate": "2020-06-13T10:15:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-7fhm-mqm4-2wp7",
+        "PkgName": "minimist",
+        "InstalledVersion": "0.0.8",
+        "FixedVersion": "1.2.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7",
+        "Title": "Withdrawn: ESLint dependencies are vulnerable (ReDoS and Prototype Pollution)",
+        "Description": "**Withdrawn**\nGitHub has withdrawn this advisory in place of GHSA-vh95-rmgr-6w4m and GHSA-6chw-6frg-f759.\nThe reason for withdrawing is that some mistakes were made during the ingestion of CVE-2020-7598\nwhich caused this advisory to be published with incorrect information.\n\nIn order to provide accurate advisory information, new advisories were created:\n\n- minimist: https://github.com/advisories/GHSA-vh95-rmgr-6w4m\n- acorn: https://github.com/advisories/GHSA-6chw-6frg-f759",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-6chw-6frg-f759",
+          "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2020-7598",
+        "PkgName": "minimist",
+        "InstalledVersion": "1.2.0",
+        "FixedVersion": "1.2.3, 0.2.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-7598",
+        "Title": "nodejs-minimist: prototype pollution allows adding or modifying properties of Object.prototype using a constructor or __proto__ payload",
+        "Description": "minimist before 1.2.2 could be tricked into adding or modifying properties of Object.prototype using a \"constructor\" or \"__proto__\" payload.",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V2Score": 6.8,
+            "V3Score": 5.6
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5.6
+          }
+        },
+        "References": [
+          "http://lists.opensuse.org/opensuse-security-announce/2020-06/msg00024.html",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7598",
+          "https://github.com/advisories/GHSA-vh95-rmgr-6w4m",
+          "https://linux.oracle.com/cve/CVE-2020-7598.html",
+          "https://linux.oracle.com/errata/ELSA-2020-2852.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-7598",
+          "https://snyk.io/vuln/SNYK-JS-MINIMIST-559764"
+        ],
+        "PublishedDate": "2020-03-11T23:15:00Z",
+        "LastModifiedDate": "2020-06-13T10:15:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-7fhm-mqm4-2wp7",
+        "PkgName": "minimist",
+        "InstalledVersion": "1.2.0",
+        "FixedVersion": "1.2.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7",
+        "Title": "Withdrawn: ESLint dependencies are vulnerable (ReDoS and Prototype Pollution)",
+        "Description": "**Withdrawn**\nGitHub has withdrawn this advisory in place of GHSA-vh95-rmgr-6w4m and GHSA-6chw-6frg-f759.\nThe reason for withdrawing is that some mistakes were made during the ingestion of CVE-2020-7598\nwhich caused this advisory to be published with incorrect information.\n\nIn order to provide accurate advisory information, new advisories were created:\n\n- minimist: https://github.com/advisories/GHSA-vh95-rmgr-6w4m\n- acorn: https://github.com/advisories/GHSA-6chw-6frg-f759",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-6chw-6frg-f759",
+          "https://github.com/advisories/GHSA-7fhm-mqm4-2wp7"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2017-18214",
+        "PkgName": "moment",
+        "InstalledVersion": "2.18.1",
+        "FixedVersion": "2.19.3",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-18214",
+        "Title": "nodejs-moment: Regular expression denial of service",
+        "Description": "The moment module before 2.19.3 for Node.js is prone to a regular expression denial of service via a crafted date string, a different vulnerability than CVE-2016-4055.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18214",
+          "https://github.com/advisories/GHSA-446m-mv8f-q348",
+          "https://github.com/moment/moment/issues/4163",
+          "https://nodesecurity.io/advisories/532",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-18214",
+          "https://www.tenable.com/security/tns-2019-02"
+        ],
+        "PublishedDate": "2018-03-04T21:29:00Z",
+        "LastModifiedDate": "2020-11-16T20:23:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-mh5c-679w-hh4r",
+        "PkgName": "mongodb",
+        "InstalledVersion": "2.1.10",
+        "FixedVersion": "3.1.13",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-mh5c-679w-hh4r",
+        "Title": "Denial of Service in mongodb",
+        "Description": "Versions of `mongodb` prior to 3.1.13 are vulnerable to Denial of Service. The package fails to properly catch an exception when a collection name is invalid and the DB does not exist, crashing the application.\n\n\n## Recommendation\n\nUpgrade to version 3.1.13 or later.",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/advisories/GHSA-mh5c-679w-hh4r",
+          "https://www.npmjs.com/advisories/1203"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2019-17426",
+        "PkgName": "mongoose",
+        "InstalledVersion": "4.4.10",
+        "FixedVersion": "5.7.5",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17426",
+        "Title": "Access control bypass possible due to _bsontype attribute handling",
+        "Description": "Automattic Mongoose through 5.7.4 allows attackers to bypass access control (in some applications) because any query object with a _bsontype attribute is ignored. For example, adding \"_bsontype\":\"a\" can sometimes interfere with a query filter. NOTE: this CVE is about Mongoose's failure to work around this _bsontype special case that exists in older versions of the bson parser (aka the mongodb/js-bson project).",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+            "V2Score": 6.4,
+            "V3Score": 9.1
+          }
+        },
+        "References": [
+          "https://github.com/Automattic/mongoose/commit/f3eca5b94d822225c04e96cbeed9f095afb3c31c",
+          "https://github.com/Automattic/mongoose/issues/8222",
+          "https://github.com/advisories/GHSA-8687-vv9j-hgph",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-17426"
+        ],
+        "PublishedDate": "2019-10-10T02:05:00Z",
+        "LastModifiedDate": "2019-10-16T13:34:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2019-5413",
+        "PkgName": "morgan",
+        "InstalledVersion": "1.7.0",
+        "FixedVersion": "1.9.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5413",
+        "Title": "nodejs-morgan: Unescaped input in compile() function",
+        "Description": "An attacker can use the format parameter to inject arbitrary commands in the npm package morgan \u003c 1.9.1.",
+        "Severity": "CRITICAL",
+        "CweIDs": [
+          "CWE-77"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 9.8
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L",
+            "V3Score": 5
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-gwg9-rgvj-4h5j",
+          "https://hackerone.com/reports/390881",
+          "https://lists.apache.org/thread.html/r8ba4c628fba7181af58817d452119481adce4ba92e889c643e4c7dd3@%3Ccommits.netbeans.apache.org%3E",
+          "https://lists.apache.org/thread.html/rb5ac16fad337d1f3bb7079549f97d8166d0ef3082629417c39f12d63@%3Cnotifications.netbeans.apache.org%3E",
+          "https://nvd.nist.gov/vuln/detail/CVE-2019-5413"
+        ],
+        "PublishedDate": "2019-03-21T16:01:00Z",
+        "LastModifiedDate": "2019-10-09T23:50:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-473",
+        "PkgName": "morgan",
+        "InstalledVersion": "1.7.0",
+        "FixedVersion": "\u003e=1.9.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/390881",
+        "Title": "Arbitrary Code Injection",
+        "Description": "Code Injection Vulnerability in morgan Package",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://hackerone.com/reports/390881"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2018-16490",
+        "PkgName": "mpath",
+        "InstalledVersion": "0.2.1",
+        "FixedVersion": "0.5.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-16490",
+        "Title": "nodejs-mpath: prototype pollution in Object.prototype",
+        "Description": "A prototype pollution vulnerability was found in module mpath \u003c0.5.1 that allows an attacker to inject arbitrary properties onto Object.prototype.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-74"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:L",
+            "V3Score": 4.2
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-h466-j336-74wx",
+          "https://hackerone.com/reports/390860",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-16490"
+        ],
+        "PublishedDate": "2019-02-01T18:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:36:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2020-35149",
+        "PkgName": "mquery",
+        "InstalledVersion": "1.10.0",
+        "FixedVersion": "3.2.3",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-35149",
+        "Title": "mquery: Code injection via merge or clone operation",
+        "Description": "lib/utils.js in mquery before 3.2.3 allows a pollution attack because a special property (e.g., __proto__) can be copied during a merge or clone operation.",
+        "Severity": "MEDIUM",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-45q2-34rf-mr94",
+          "https://github.com/aheckmann/mquery/commit/792e69fd0a7281a0300be5cade5a6d7c1d468ad4",
+          "https://nvd.nist.gov/vuln/detail/CVE-2020-35149",
+          "https://portswigger.net/daily-swig/prototype-pollution-the-dangerous-and-underrated-vulnerability-impacting-javascript-applications"
+        ],
+        "PublishedDate": "2020-12-11T19:15:00Z",
+        "LastModifiedDate": "2020-12-14T21:12:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-10539",
+        "PkgName": "negotiator",
+        "InstalledVersion": "0.5.3",
+        "FixedVersion": "0.6.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-10539",
+        "Title": "Regular Expression Denial of Service in negotiator",
+        "Description": "negotiator is an HTTP content negotiator for Node.js and is used by many modules and frameworks including Express and Koa. The header for \"Accept-Language\", when parsed by negotiator 0.6.0 and earlier is vulnerable to Regular Expression Denial of Service via a specially crafted string.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10539",
+          "https://github.com/advisories/GHSA-7mc5-chhp-fmc3",
+          "https://nodesecurity.io/advisories/106",
+          "https://nvd.nist.gov/vuln/detail/CVE-2016-10539"
+        ],
+        "PublishedDate": "2018-05-31T20:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:16:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-106",
+        "PkgName": "negotiator",
+        "InstalledVersion": "0.5.3",
+        "FixedVersion": "\u003e= 0.6.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "Title": "Regular Expression Denial of Service",
+        "Description": "negotiator is an HTTP content negotiator for Node.js and is used by many modules and frameworks including Express and Koa.\n\nThe header for \"Accept-Language\", when parsed by negotiator is vulnerable to Regular Expression Denial of Service via a specially crafted string. \n\nTimeline\n\n- April 29th 2016 - Initial report to maintainers\n- April 29th 2016 - Confirm receipt from maintainers\n- May 1st 2016 - Fix confirmed\n- May 5th 2016 - 0.6.1 published with fix\n- June 16th 2016 - Advisory published (delay was to coordinate fixes in upstream frameworks, Koa and Express)",
+        "Severity": "HIGH",
+        "References": [
+          "https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2017-1000048",
+        "PkgName": "qs",
+        "InstalledVersion": "4.0.0",
+        "FixedVersion": "6.3.2, 6.2.3, 6.1.2, 6.0.4",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-1000048",
+        "Title": "nodejs-qs: Prototype override protection bypass",
+        "Description": "the web framework using ljharb's qs module older than v6.3.2, v6.2.3, v6.1.2, and v6.0.4 is vulnerable to a DoS. A malicious user can send a evil request to cause the web framework crash.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2017:2672",
+          "https://github.com/advisories/GHSA-gqgv-6jq5-jjj9",
+          "https://github.com/ljharb/qs/issues/200",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-1000048",
+          "https://snyk.io/vuln/npm:qs:20170213"
+        ],
+        "PublishedDate": "2017-07-17T13:18:00Z",
+        "LastModifiedDate": "2017-12-31T02:29:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-1000048",
+        "PkgName": "qs",
+        "InstalledVersion": "6.1.0",
+        "FixedVersion": "6.3.2, 6.2.3, 6.1.2, 6.0.4",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-1000048",
+        "Title": "nodejs-qs: Prototype override protection bypass",
+        "Description": "the web framework using ljharb's qs module older than v6.3.2, v6.2.3, v6.1.2, and v6.0.4 is vulnerable to a DoS. A malicious user can send a evil request to cause the web framework crash.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2017:2672",
+          "https://github.com/advisories/GHSA-gqgv-6jq5-jjj9",
+          "https://github.com/ljharb/qs/issues/200",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-1000048",
+          "https://snyk.io/vuln/npm:qs:20170213"
+        ],
+        "PublishedDate": "2017-07-17T13:18:00Z",
+        "LastModifiedDate": "2017-12-31T02:29:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16028",
+        "PkgName": "randomatic",
+        "InstalledVersion": "1.1.7",
+        "FixedVersion": "3.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16028",
+        "Title": "Cryptographically Weak PRNG in randomatic",
+        "Description": "react-native-meteor-oauth is a library for Oauth2 login to a Meteor server in React Native. The oauth Random Token is generated using a non-cryptographically strong RNG (Math.random()).",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-338"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "V2Score": 5,
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-6g33-f262-xjp4",
+          "https://github.com/tableflip/react-native-meteor-oauth/blob/a7eb738b74c469f5db20296b44b7cae4e2337435/src/meteor-oauth.js#L66",
+          "https://nodesecurity.io/advisories/157",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16028"
+        ],
+        "PublishedDate": "2018-06-04T19:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-26539",
+        "PkgName": "sanitize-html",
+        "InstalledVersion": "1.14.1",
+        "FixedVersion": "2.3.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-26539",
+        "Title": "sanitize-html: improper handling of internationalized domain name (IDN) can lead to bypass hostname whitelist validation",
+        "Description": "Apostrophe Technologies sanitize-html before 2.3.1 does not properly handle internationalized domain name (IDN) which could allow an attacker to bypass hostname whitelist validation set by the \"allowedIframeHostnames\" option.",
+        "Severity": "MEDIUM",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://advisory.checkmarx.net/advisory/CX-2021-4308",
+          "https://github.com/advisories/GHSA-rjqq-98f6-6j3r",
+          "https://github.com/apostrophecms/sanitize-html/blob/main/CHANGELOG.md#231-2021-01-22",
+          "https://github.com/apostrophecms/sanitize-html/pull/458",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-26539"
+        ],
+        "PublishedDate": "2021-02-08T17:15:00Z",
+        "LastModifiedDate": "2021-03-25T23:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-26540",
+        "PkgName": "sanitize-html",
+        "InstalledVersion": "1.14.1",
+        "FixedVersion": "2.3.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-26540",
+        "Title": "sanitize-html: improper validation of hostnames set by the \"allowedIframeHostnames\" option can lead to bypass hostname whitelist for iframe element",
+        "Description": "Apostrophe Technologies sanitize-html before 2.3.2 does not properly validate the hostnames set by the \"allowedIframeHostnames\" option when the \"allowIframeRelativeUrls\" is set to true, which allows attackers to bypass hostname whitelist for iframe element, related using an src value that starts with \"/\\\\example.com\".",
+        "Severity": "MEDIUM",
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://advisory.checkmarx.net/advisory/CX-2021-4309",
+          "https://github.com/advisories/GHSA-mjxr-4v3x-q3m4",
+          "https://github.com/apostrophecms/sanitize-html/blob/main/CHANGELOG.md#232-2021-01-26",
+          "https://github.com/apostrophecms/sanitize-html/pull/460",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-26540"
+        ],
+        "PublishedDate": "2021-02-08T17:15:00Z",
+        "LastModifiedDate": "2021-04-01T15:02:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-16117",
+        "PkgName": "slug",
+        "InstalledVersion": "0.9.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-16117",
+        "Title": "Regular Expression Denial of Service in slug",
+        "Description": "slug is a module to slugify strings, even if they contain unicode. slug is vulnerable to regular expression denial of service is specially crafted untrusted input is passed as input. About 50k characters can block the event loop for 2 seconds.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          }
+        },
+        "References": [
+          "https://github.com/advisories/GHSA-jxqq-cqm6-pfq9",
+          "https://github.com/dodo/node-slug/issues/82",
+          "https://nodesecurity.io/advisories/537",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-16117"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:24:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2018-3737",
+        "PkgName": "sshpk",
+        "InstalledVersion": "1.13.1",
+        "FixedVersion": "1.13.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-3737",
+        "Title": "nodejs-sshpk: ReDoS when parsing crafted invalid public keys in lib/formats/ssh.js",
+        "Description": "sshpk is vulnerable to ReDoS when parsing crafted invalid public keys.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-185"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3737",
+          "https://github.com/advisories/GHSA-2m39-62fm-q8r3",
+          "https://hackerone.com/reports/319593",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-3737"
+        ],
+        "PublishedDate": "2018-06-07T02:29:00Z",
+        "LastModifiedDate": "2019-10-09T23:40:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-401",
+        "PkgName": "sshpk",
+        "InstalledVersion": "1.13.1",
+        "FixedVersion": "\u003e=1.13.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/319593",
+        "Title": "Denial of Service",
+        "Description": "`sshpk` is vulnerable to ReDoS when parsing crafted invalid public keys",
+        "Severity": "HIGH",
+        "References": [
+          "https://github.com/joyent/node-sshpk/blob/v1.13.1/lib/formats/ssh.js#L17",
+          "https://hackerone.com/reports/319593"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2018-21270",
+        "PkgName": "stringstream",
+        "InstalledVersion": "0.0.5",
+        "FixedVersion": "0.0.6",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-21270",
+        "Title": "nodejs-stringstream: out-of-bounds read leading to uninitialized memory exposure",
+        "Description": "Versions less than 0.0.6 of the Node.js stringstream module are vulnerable to an out-of-bounds read because of allocation of uninitialized buffers when a number is passed in the input stream (when using Node.js 4.x).",
+        "Severity": "MEDIUM",
+        "CweIDs": [
+          "CWE-125"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:P/I:N/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+            "V2Score": 5.8,
+            "V3Score": 6.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:H",
+            "V3Score": 6.5
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-21270",
+          "https://github.com/advisories/GHSA-mf6x-7mm4-x2g7",
+          "https://github.com/mhart/StringStream/commit/afbc7442220358419e330618e47f3a65fc265b1b",
+          "https://github.com/mhart/StringStream/issues/7",
+          "https://hackerone.com/reports/321670",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-21270",
+          "https://www.npmjs.com/advisories/664"
+        ],
+        "PublishedDate": "2020-12-03T21:15:00Z",
+        "LastModifiedDate": "2021-02-16T14:35:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-422",
+        "PkgName": "stringstream",
+        "InstalledVersion": "0.0.5",
+        "FixedVersion": "\u003e=0.0.6",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://hackerone.com/reports/321670",
+        "Title": "Out-of-bounds Read",
+        "Description": "`stringstream` allocates uninitialized Buffers when number is passed in input stream on Node.js 4.x and below",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/mhart/StringStream/blob/v0.0.5/stringstream.js#L32",
+          "https://hackerone.com/reports/321670"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2018-20834",
+        "PkgName": "tar",
+        "InstalledVersion": "2.2.1",
+        "FixedVersion": "4.4.2, 2.2.2",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20834",
+        "Title": "nodejs-tar: Arbitrary file overwrites when extracting tarballs containing a hard-link",
+        "Description": "A vulnerability was found in node-tar before version 4.4.2 (excluding version 2.2.2). An Arbitrary File Overwrite issue exists when extracting a tarball containing a hardlink to a file that already exists on the system, in conjunction with a later plain file with the same name as the hardlink. This plain file content replaces the existing file content. A patch has been applied to node-tar v2.2.2).",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-59"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+            "V2Score": 6.4,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "V3Score": 8.8
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2019:1821",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20834",
+          "https://github.com/advisories/GHSA-j44m-qm6p-hp7m",
+          "https://github.com/npm/node-tar/commit/7ecef07da6a9e72cc0c4d0c9c6a8e85b6b52395d",
+          "https://github.com/npm/node-tar/commit/b0c58433c22f5e7fe8b1c76373f27e3f81dcd4c8",
+          "https://github.com/npm/node-tar/commits/v2.2.2",
+          "https://github.com/npm/node-tar/compare/58a8d43...a5f7779",
+          "https://hackerone.com/reports/344595",
+          "https://nvd.nist.gov/vuln/detail/CVE-2018-20834"
+        ],
+        "PublishedDate": "2019-04-30T19:29:00Z",
+        "LastModifiedDate": "2019-09-04T20:15:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2016-1000232",
+        "PkgName": "tough-cookie",
+        "InstalledVersion": "2.2.2",
+        "FixedVersion": "2.3.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-1000232",
+        "Title": "nodejs-tough-cookie: regular expression DoS via Cookie header with many semicolons",
+        "Description": "NodeJS Tough-Cookie version 2.2.2 contains a Regular Expression Parsing vulnerability in HTTP request Cookie Header parsing that can result in Denial of Service. This attack appear to be exploitable via Custom HTTP header passed by client. This vulnerability appears to have been fixed in 2.3.0.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-20"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 5,
+            "V3Score": 5.3
+          },
+          "redhat": {
+            "V2Vector": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V2Score": 4.3,
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "https://access.redhat.com/errata/RHSA-2016:2101",
+          "https://access.redhat.com/errata/RHSA-2017:2912",
+          "https://access.redhat.com/security/cve/cve-2016-1000232",
+          "https://github.com/advisories/GHSA-qhv9-728r-6jqg",
+          "https://github.com/salesforce/tough-cookie/commit/615627206357d997d5e6ff9da158997de05235ae",
+          "https://github.com/salesforce/tough-cookie/commit/e4fc2e0f9ee1b7a818d68f0ac7ea696f377b1534",
+          "https://nodesecurity.io/advisories/130",
+          "https://nvd.nist.gov/vuln/detail/CVE-2016-1000232",
+          "https://www.ibm.com/blogs/psirt/ibm-security-bulletin-ibm-api-connect-is-affected-by-node-js-tough-cookie-module-vulnerability-to-a-denial-of-service-cve-2016-1000232/",
+          "https://www.npmjs.com/advisories/130"
+        ],
+        "PublishedDate": "2018-09-05T17:29:00Z",
+        "LastModifiedDate": "2018-10-31T15:02:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-15010",
+        "PkgName": "tough-cookie",
+        "InstalledVersion": "2.2.2",
+        "FixedVersion": "2.3.3",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-15010",
+        "Title": "nodejs-tough-cookie: Regular expression denial of service",
+        "Description": "A ReDoS (regular expression denial of service) flaw was found in the tough-cookie module before 2.3.3 for Node.js. An attacker that is able to make an HTTP request using a specially crafted cookie may cause the application to consume an excessive amount of CPU.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/101185",
+          "https://access.redhat.com/errata/RHSA-2017:2912",
+          "https://access.redhat.com/errata/RHSA-2017:2913",
+          "https://access.redhat.com/errata/RHSA-2018:1263",
+          "https://access.redhat.com/errata/RHSA-2018:1264",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15010",
+          "https://github.com/advisories/GHSA-g7q5-pjjr-gqvp",
+          "https://github.com/salesforce/tough-cookie/issues/92",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6VEBDTGNHVM677SLZDEHMWOP3ISMZSFT/",
+          "https://nodesecurity.io/advisories/525",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-15010",
+          "https://snyk.io/vuln/npm:tough-cookie:20170905"
+        ],
+        "PublishedDate": "2017-10-04T01:29:00Z",
+        "LastModifiedDate": "2019-06-12T17:29:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2017-15010",
+        "PkgName": "tough-cookie",
+        "InstalledVersion": "2.3.2",
+        "FixedVersion": "2.3.3",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-15010",
+        "Title": "nodejs-tough-cookie: Regular expression denial of service",
+        "Description": "A ReDoS (regular expression denial of service) flaw was found in the tough-cookie module before 2.3.3 for Node.js. An attacker that is able to make an HTTP request using a specially crafted cookie may cause the application to consume an excessive amount of CPU.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-400"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "V2Score": 5,
+            "V3Score": 7.5
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "V3Score": 5.3
+          }
+        },
+        "References": [
+          "http://www.securityfocus.com/bid/101185",
+          "https://access.redhat.com/errata/RHSA-2017:2912",
+          "https://access.redhat.com/errata/RHSA-2017:2913",
+          "https://access.redhat.com/errata/RHSA-2018:1263",
+          "https://access.redhat.com/errata/RHSA-2018:1264",
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15010",
+          "https://github.com/advisories/GHSA-g7q5-pjjr-gqvp",
+          "https://github.com/salesforce/tough-cookie/issues/92",
+          "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6VEBDTGNHVM677SLZDEHMWOP3ISMZSFT/",
+          "https://nodesecurity.io/advisories/525",
+          "https://nvd.nist.gov/vuln/detail/CVE-2017-15010",
+          "https://snyk.io/vuln/npm:tough-cookie:20170905"
+        ],
+        "PublishedDate": "2017-10-04T01:29:00Z",
+        "LastModifiedDate": "2019-06-12T17:29:00Z"
+      },
+      {
+        "VulnerabilityID": "GHSA-xc7v-wxcw-j472",
+        "PkgName": "tunnel-agent",
+        "InstalledVersion": "0.4.3",
+        "FixedVersion": "0.6.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "PrimaryURL": "https://github.com/advisories/GHSA-xc7v-wxcw-j472",
+        "Title": "Memory Exposure in tunnel-agent",
+        "Description": "Versions of `tunnel-agent` before 0.6.0 are vulnerable to memory exposure.\n\nThis is exploitable if user supplied input is provided to the auth value and is a number.\n\nProof-of-concept:\n```js\nrequire('request')({\n  method: 'GET',\n  uri: 'http://www.example.com',\n  tunnel: true,\n  proxy:{\n    protocol: 'http:',\n    host:'127.0.0.1',\n    port:8080,\n    auth:USERSUPPLIEDINPUT // number\n  }\n});\n```\n\n\n## Recommendation\n\nUpdate to version 0.6.0 or later.",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://github.com/advisories/GHSA-xc7v-wxcw-j472",
+          "https://github.com/request/tunnel-agent/commit/9ca95ec7219daface8a6fc2674000653de0922c0"
+        ]
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-393",
+        "PkgName": "tunnel-agent",
+        "InstalledVersion": "0.4.3",
+        "FixedVersion": "\u003e=0.6.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "Title": "Memory Exposure",
+        "Description": "PoC:\n```js\nrequire('request')({\n  method: 'GET',\n  uri: 'http://www.example.com',\n  tunnel: true,\n  proxy:{\n      protocol: 'http:',\n      host:'127.0.0.1',\n      port:8080,\n      auth:80 // number\n  }\n});\n```\n\nReported at 2016-11-20.",
+        "Severity": "MEDIUM",
+        "References": [
+          "https://gist.github.com/ChALkeR/fd6b2c445834244e7d440a043f9d2ff4",
+          "https://github.com/request/tunnel-agent/commit/9ca95ec7219daface8a6fc2674000653de0922c0"
+        ]
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23358",
+        "PkgName": "underscore",
+        "InstalledVersion": "1.7.0",
+        "FixedVersion": "1.12.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23358",
+        "Title": "nodejs-underscore: Arbitrary code execution via the template function",
+        "Description": "The package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template function, particularly when a variable property is passed as an argument as it is not sanitized.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-94"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23358",
+          "https://github.com/advisories/GHSA-cf4h-3jhx-xvhq",
+          "https://github.com/jashkenas/underscore/blob/master/modules/template.js%23L71",
+          "https://lists.apache.org/thread.html/r5df90c46f7000c4aab246e947f62361ecfb849c5a553dcdb0ef545e1@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/r770f910653772317b117ab4472b0a32c266ee4abbafda28b8a6f9306@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/raae088abdfa4fbd84e1d19d7a7ffe52bf8e426b83e6599ea9a734dba@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/rbc84926bacd377503a3f5c37b923c1931f9d343754488d94e6f08039@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/re69ee408b3983b43e9c4a82a9a17cbbf8681bb91a4b61b46f365aeaf@%3Cissues.cordova.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2021/03/msg00038.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23358",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1081504",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBJASHKENAS-1081505",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1081503",
+          "https://snyk.io/vuln/SNYK-JS-UNDERSCORE-1080984",
+          "https://ubuntu.com/security/notices/USN-4913-1",
+          "https://ubuntu.com/security/notices/USN-4913-2",
+          "https://www.debian.org/security/2021/dsa-4883"
+        ],
+        "PublishedDate": "2021-03-29T14:15:00Z",
+        "LastModifiedDate": "2021-04-20T13:57:00Z"
+      },
+      {
+        "VulnerabilityID": "CVE-2021-23358",
+        "PkgName": "underscore",
+        "InstalledVersion": "1.8.3",
+        "FixedVersion": "1.12.1",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nvd",
+        "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-23358",
+        "Title": "nodejs-underscore: Arbitrary code execution via the template function",
+        "Description": "The package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template function, particularly when a variable property is passed as an argument as it is not sanitized.",
+        "Severity": "HIGH",
+        "CweIDs": [
+          "CWE-94"
+        ],
+        "CVSS": {
+          "nvd": {
+            "V2Vector": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V2Score": 7.5,
+            "V3Score": 7.2
+          },
+          "redhat": {
+            "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+            "V3Score": 7.2
+          }
+        },
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23358",
+          "https://github.com/advisories/GHSA-cf4h-3jhx-xvhq",
+          "https://github.com/jashkenas/underscore/blob/master/modules/template.js%23L71",
+          "https://lists.apache.org/thread.html/r5df90c46f7000c4aab246e947f62361ecfb849c5a553dcdb0ef545e1@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/r770f910653772317b117ab4472b0a32c266ee4abbafda28b8a6f9306@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/raae088abdfa4fbd84e1d19d7a7ffe52bf8e426b83e6599ea9a734dba@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/rbc84926bacd377503a3f5c37b923c1931f9d343754488d94e6f08039@%3Cissues.cordova.apache.org%3E",
+          "https://lists.apache.org/thread.html/re69ee408b3983b43e9c4a82a9a17cbbf8681bb91a4b61b46f365aeaf@%3Cissues.cordova.apache.org%3E",
+          "https://lists.debian.org/debian-lts-announce/2021/03/msg00038.html",
+          "https://nvd.nist.gov/vuln/detail/CVE-2021-23358",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1081504",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBJASHKENAS-1081505",
+          "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1081503",
+          "https://snyk.io/vuln/SNYK-JS-UNDERSCORE-1080984",
+          "https://ubuntu.com/security/notices/USN-4913-1",
+          "https://ubuntu.com/security/notices/USN-4913-2",
+          "https://www.debian.org/security/2021/dsa-4883"
+        ],
+        "PublishedDate": "2021-03-29T14:15:00Z",
+        "LastModifiedDate": "2021-04-20T13:57:00Z"
+      },
+      {
+        "VulnerabilityID": "NSWG-ECO-161",
+        "PkgName": "unicode",
+        "InstalledVersion": "10.0.0",
+        "FixedVersion": "\u003c0.0.0",
+        "Layer": {
+          "DiffID": "sha256:5611ccc7d9232418c8947e3ccb1f99f3f55d7945f9338b23749ad1d2f87ee835"
+        },
+        "SeveritySource": "nodejs-security-wg",
+        "Title": "Downloads Resources over HTTP",
+        "Description": "unicode loads unicode data downloaded from unicode.org into nodejs.\n\nUnicode downloads binary resources over HTTP, which leaves it vulnerable to MITM attacks.",
+        "Severity": "HIGH"
+      }
+    ]
+  }
+]
